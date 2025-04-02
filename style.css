@@ -1,0 +1,514 @@
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+}
+
+.navbar {
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* position: fixed;
+    width: 100%; */
+}
+
+/* Box 1 Starts here logo adding */
+
+.nav_logo {
+    height: 50px;
+    width: 165px;
+    padding: 3px;
+}
+
+.logo {
+    background-image: url("Images/Amazon-Logo.png");
+    background-size: cover;
+    height: 50px;
+    width: 100%;
+}
+
+/* Border display oon hover function */
+
+.border {
+    border: 1px solid transparent;
+}
+
+.border:hover {
+    border: 1px solid white;
+}
+
+.borderextra {
+    border: 4px solid transparent;
+}
+
+.borderextra:focus-within {
+    border: 4px solid #faa12e;
+    border-radius: 10px;
+}
+
+/* Box 2 Starts here address adding */
+
+.nav_location {
+    height: 50px;
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#locationsymbol {
+    height: 15px;
+    width: 18px;
+    padding-top: 20px;
+    margin-right: 0px;
+}
+
+.locationtext {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#deliverylocation {
+    font-size: 0.8rem;
+    color: #cccccc;
+}
+
+#updatelocation {
+    font-size: 0.9rem;
+    font-weight: 900;
+}
+
+/* Box 3 Starts here search bar adding */
+.nav_search {
+    display: flex;
+    height: 38px;
+    width: 600px;
+}
+
+#select {
+    width: 50px;
+    background-color: #e6e6e6;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-align: center;
+    border: none;
+}
+
+#input {
+    width: 100%;
+    border: none;
+    font-size: 16px;
+}
+
+#searchicon {
+    width: 50px;
+    background-color: #febd68;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #0f1111;
+}
+
+/* Box 4 Starts here language selection adding */
+
+.nav_lan {
+    height: 45px;
+    width: 75px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#usflag {
+    height: 17px;
+    width: 25px;
+    background-image: url(Images/USAflag.png);
+    background-size: cover;
+}
+
+#en {
+    height: 20px;
+    width: 18px;
+    font-weight: 900;
+}
+
+#selecten {
+    background-color: #0f1111;
+    color: white;
+    border: none;
+    width: 13px;
+}
+
+/* Box 5 Starts here Account and lists adding */
+
+.nav_acc {
+    width: 160px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.downacc {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#helloacc {
+    width: 80px;
+    height: 15px;
+    font-size: 0.85rem;
+}
+
+#accounts {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+#selectacc {
+    background-color: #0f1111;
+    color: white;
+    border: none;
+    width: 18px;
+}
+
+/* Box 6 Starts here Orders and Lists adding */
+
+.orderreturn {
+    width: 75px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#returns {
+    width: 60px;
+    height: 15px;
+    font-size: 0.85rem;
+}
+
+#orders {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* Box 7 Starts here Cart adding */
+
+.nav_cart {
+    width: 70px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* .cartanditems {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+} */
+
+/* #item {
+    width: 20px;
+    height: 15px;
+    font-size: 1.4rem;
+    color: #f08804;
+    font-weight: 900;
+    margin-left: 5px;
+    margin-bottom: 5px;
+} */
+
+#carticon {
+    width: 30px;
+    height: 25px;
+}
+
+#carticon i {
+    font-size: 25px;
+}
+
+.cartname {
+    width: 30px;
+    height: 15px;
+    font-weight: 900;
+    font-size: 0.9rem;
+    /* margin-top: 20px; */
+}
+
+/* Design panel */
+.panel {
+    background-color: #232f3e;
+    display: flex;
+    height: 40px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.all {
+    color: white;
+    font-size: 0.85rem;
+    padding: 6px;
+}
+
+.panelitem {
+    color: white;
+    font-size: 0.85rem;
+    padding: 6px;
+}
+
+.selectpanel {
+    background-color: #232f3e;
+    color: white;
+    border: none;
+    width: 18px;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+/* Hero section design */
+
+.hero_section {
+    background-image: url(Images/Hero_image.jpg);
+    background-size: cover;
+    height: 300px;
+}
+
+/* Shopping section design */
+.shopping {
+    background-color: rgb(251, 218, 224);
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+}
+
+.rows {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.box {
+    height: 350px;
+    width: 22.5%;
+    /* border: 3px solid black; */
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.row1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box1img1 {
+    background-image: url(Images/b1i1.jpg);
+}
+
+.box1img2 {
+    background-image: url(Images/b1i2.jpg);
+}
+
+.box1img3 {
+    background-image: url(Images/b1i3.jpg);
+}
+
+.box1img4 {
+    background-image: url(Images/b1i4.jpg);
+}
+
+.box2img1 {
+    background-image: url(Images/b2i1.jpg);
+}
+
+.box2img2 {
+    background-image: url(Images/b2i2.jpg);
+}
+
+.box2img3 {
+    background-image: url(Images/b2i3.jpg);
+}
+
+.box2img4 {
+    background-image: url(Images/b2i4.jpg);
+}
+
+.box3img1 {
+    background-image: url(Images/b3i1.jpg);
+}
+
+.box3img2 {
+    background-image: url(Images/b3i2.jpg);
+}
+
+.box3img3 {
+    background-image: url(Images/b3i3.jpg);
+}
+
+.box3img4 {
+    background-image: url(Images/b3i4.jpg);
+}
+
+.box4img1 {
+    background-image: url(Images/b4i1.jpg);
+}
+
+.box4img2 {
+    background-image: url(Images/b4i2.jpg);
+}
+
+.box4img3 {
+    background-image: url(Images/b4i3.jpg);
+}
+
+.box4img4 {
+    background-image: url(Images/b4i4.jpg);
+}
+
+.box5img1 {
+    background-image: url(Images/b5i1.jpg);
+}
+
+.box5img2 {
+    background-image: url(Images/b5i2.jpg);
+}
+
+.box5img3 {
+    background-image: url(Images/b5i3.jpg);
+}
+
+.box5img4 {
+    background-image: url(Images/b5i4.jpg);
+}
+
+.box6img1 {
+    background-image: url(Images/b6i1.jpg);
+}
+
+.box6img2 {
+    background-image: url(Images/b6i2.jpg);
+}
+
+.box6img3 {
+    background-image: url(Images/b6i3.jpg);
+}
+
+.box6img4 {
+    background-image: url(Images/b6i4.jpg);
+}
+
+.box7img1 {
+    background-image: url(Images/b7i1.jpg);
+}
+
+.box7img2 {
+    background-image: url(Images/b7i2.jpg);
+}
+
+.box7img3 {
+    background-image: url(Images/b7i3.jpg);
+}
+
+.box7img4 {
+    background-image: url(Images/b7i4.jpg);
+}
+
+.box8img1 {
+    background-image: url(Images/b8i1.jpg);
+}
+
+.box8img2 {
+    background-image: url(Images/b8i2.jpg);
+}
+
+.box8img3 {
+    background-image: url(Images/b8i3.jpg);
+}
+
+.box8img4 {
+    background-image: url(Images/b8i4.jpg);
+}
+
+.boximg {
+    height: 100px;
+    width: 150px;
+    background-size: cover;
+}
+
+.shoppinglink a {
+    text-decoration: none;
+    font-size: 0.75rem;
+    padding-left: 10px;
+}
+
+.textunderimage {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 0.7rem;
+    margin: 0;
+    padding: 0;
+}
+
+.bottomfooter {
+    height: 80px;
+    width: 100%;
+    background-color: #131a22;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.topfooter {
+    width: 400px;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.downfooter {
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+
+/* Anchor tag styles */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+/* Panel single-line styles */
+.panel {
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.panelitem,
+.all {
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Search icon clickable styles */
+#searchiconlink {
+    display: contents;
+}
+
+#searchicon {
+    cursor: pointer;
+}
